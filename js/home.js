@@ -34,8 +34,8 @@ document.getElementById('btn-add-money').addEventListener('click',function(aw){
         
     }
     else{
-        console.log('wrong password! please try again');
+        alert('Failed to add money. Please try again later.');
     }
-});
+});   
 
 
