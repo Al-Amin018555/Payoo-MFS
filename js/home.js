@@ -27,10 +27,10 @@ document.getElementById('btn-add-money').addEventListener('click',function(aw){
         // step-5:add currentBalance with moneyAmountInput
         const currentBalanceNumber = parseFloat(currentBalance);
         const moneyAmountNumber = parseFloat(moneyAmountInput);
-        const totalBalance = currentBalanceNumber + moneyAmountNumber;
+        const updatedBalance = currentBalanceNumber + moneyAmountNumber;
        
         // step-6: update the balance in the UI/DOM
-        document.getElementById('current-balance').innerText = totalBalance;
+        document.getElementById('current-balance').innerText = updatedBalance;
         
     }
     else{
