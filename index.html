@@ -15,10 +15,47 @@
 </head>
 
 <body>
-    <main>
-        
-    </main>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <!-- Inside phone artboard -->
+                <div class="artboard artboard-demo phone-3">
 
+                    <!-- login form starts -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Mobile Number</span>
+                                </label>
+                                <input id="input-mobile-num" type="text" placeholder="Enter your number" class="input input-bordered"
+                                    required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="input-mobile-pin" type="password" placeholder="Enter pin" class="input input-bordered" required />
+                            </div>
+
+                            <div class="form-control mt-6">
+                                <button id="login-btn" class="btn btn-primary">Login</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- login form ends -->
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+    <script src="js/utilites.js"></script>
 </body>
 
 </html>
