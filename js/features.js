@@ -17,3 +17,9 @@ document.getElementById('show-transfer-money')
         // console.log('clicked for having transfer money feature');
         showSectionById('transfer-money-form')
     });
+
+document.getElementById('show-transaction')
+    .addEventListener('click', function () {
+        // console.log('clicked for having transactions feature');
+        showSectionById('transaction-section');
+    });

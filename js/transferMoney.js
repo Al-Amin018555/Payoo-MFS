@@ -23,5 +23,13 @@ document.getElementById('transfer-money-btn')
             const newBalance = balance - transferMoney;
 
             document.getElementById('account-balance').innerText = newBalance;
+
+            const div = document.createElement('div');
+            div.classList.add('bg-yellow-400');
+            div.innerHTML = `
+            <h1 class="font-bold text-2xl"> Transferred Money </h1>
+            <p> ${transferMoney} tk. transferred New Balance: ${newBalance} </p>
+            `;
+            document.getElementById('transaction-container').appendChild(div);
         }
     });

@@ -19,6 +19,14 @@ document.getElementById('add-money-btn')
             const newBalance = balance + addMoney;
 
             document.getElementById('account-balance').innerText = newBalance;
+            
+            const div = document.createElement('div');
+            div.classList.add('bg-sky-400');
+            div.innerHTML = `
+            <h1 class="font-bold text-2xl"> Add Money </h1>
+            <p> ${addMoney} tk. added New Balance: ${newBalance} </p>
+            `;
+            document.getElementById('transaction-container').appendChild(div);
         }
         else {
             alert("Failed to add Money!");
