@@ -2,7 +2,7 @@
 
 document.getElementById('login-btn')
     .addEventListener('click', function (event) {
-        console.log("login btn clicked");
+        // console.log("login btn clicked");
         event.preventDefault(); 
 
         let mobileNum = getInputFieldValueById('input-mobile-num');
