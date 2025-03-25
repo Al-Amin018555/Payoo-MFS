@@ -11,3 +11,9 @@ document.getElementById('show-cash-out')
         // console.log('clicked for having cashout feature');
         showSectionById('cash-out-form')
     });
+
+document.getElementById('show-transfer-money')
+    .addEventListener('click', function () {
+        // console.log('clicked for having transfer money feature');
+        showSectionById('transfer-money-form')
+    });

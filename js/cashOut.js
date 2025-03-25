@@ -6,7 +6,8 @@ document.getElementById('cash-out-btn')
 
         const cashOut = getInputFieldValueById('input-cash-out');
         if (isNaN(cashOut)) {
-            alert('Failed to Cash Out!')
+            alert('Failed to Cash Out!');
+            return;
         }
         // console.log(cashOut);
         const pinNumber = getInputFieldValueById('input-cash-out-pin');
@@ -16,6 +17,7 @@ document.getElementById('cash-out-btn')
 
             if (cashOut > balance) {
                 alert('You do not have enough balance!');
+                return;
             }
             const newBalance = balance - cashOut;
 

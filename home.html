@@ -40,9 +40,11 @@
                       <div class="divider"></div>
 
                       <!-- features starts -->
-                      <div>
-                          <button id="show-add-money" class="btn btn-lg">Add Money</button>
-                          <button id="show-cash-out" class="btn btn-lg">Cash Out</button>
+                      <div class="grid grid-cols-2 gap-3">
+                          <button id="show-add-money" class="bg-sky-400 btn btn-lg">Add Money</button>
+                          <button id="show-cash-out" class="bg-orange-400 btn btn-lg">Cash Out</button>
+                          <button id="show-transfer-money" class="bg-yellow-400 btn btn-lg">Transfer Money</button>
+                          <button id="show-transaction" class="bg-pink-400 btn btn-lg">Transactions</button>
                           
                       </div>
                       <!-- features ends -->
@@ -103,6 +105,32 @@
                     </div>
                       <!-- cash out form ends -->
 
+                      <!-- transfer money form starts -->
+                      <div id="transfer-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Transfer Money</span>
+                                </label>
+                                <input id="input-transfer-money" type="text" placeholder="Enter Amount" class="input input-bordered"
+                                    required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="input-transfer-money-pin" type="password" placeholder="Enter pin" class="input input-bordered" required />
+                            </div>
+
+                            <div class="form-control mt-6">
+                                <button id="transfer-money-btn" class="btn btn-primary">Transfer Money</button>
+                            </div>
+
+                        </form>
+                    </div>
+                      <!-- transfer money form ends -->
                 </div>
                 <!-- mockup-phone main artboard ends -->
             </div>
@@ -113,6 +141,7 @@
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/transferMoney.js"></script>
 
 </body>
 
