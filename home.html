@@ -30,7 +30,7 @@
                     <div class="stats shadow">
                         <div class="stat">
                          
-                          <div class="stat-value">9400</div>
+                          <div id="account-balance" class="stat-value">9400</div>
                           <div class="stat-desc">Available Balance</div>
                           
                         </div>
@@ -57,7 +57,7 @@
                                 <label class="label">
                                     <span class="label-text">Add Money</span>
                                 </label>
-                                <input id="input-mobile-num" type="text" placeholder="Enter Amount" class="input input-bordered"
+                                <input id="input-add-money" type="text" placeholder="Enter Amount" class="input input-bordered"
                                     required />
                             </div>
 
@@ -65,11 +65,11 @@
                                 <label class="label">
                                     <span class="label-text">Pin Number</span>
                                 </label>
-                                <input id="input-mobile-pin" type="password" placeholder="Enter pin" class="input input-bordered" required />
+                                <input id="input-add-money-pin" type="password" placeholder="Enter pin" class="input input-bordered" required />
                             </div>
 
                             <div class="form-control mt-6">
-                                <button id="login-btn" class="btn btn-primary">Add Money</button>
+                                <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                             </div>
 
                         </form>
@@ -82,6 +82,8 @@
         </div>
         <!-- mockup-phone ends -->
     </main>
+    <script src="js/addMoney.js"></script>
+    <script src="js/utilites.js"></script>
 </body>
 
 </html>
