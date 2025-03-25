@@ -50,7 +50,7 @@
                       <div class="divider"></div>
 
                       <!-- add money form starts -->
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
 
                             <div class="form-control">
@@ -76,14 +76,43 @@
                     </div>
                       <!-- add money form ends -->
 
+                      <!-- cash out form starts -->
+                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Cash Out</span>
+                                </label>
+                                <input id="input-cash-out" type="text" placeholder="Enter Amount" class="input input-bordered"
+                                    required />
+                            </div>
+
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="input-cash-out-pin" type="password" placeholder="Enter pin" class="input input-bordered" required />
+                            </div>
+
+                            <div class="form-control mt-6">
+                                <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+                            </div>
+
+                        </form>
+                    </div>
+                      <!-- cash out form ends -->
+
                 </div>
                 <!-- mockup-phone main artboard ends -->
             </div>
         </div>
         <!-- mockup-phone ends -->
     </main>
-    <script src="js/addMoney.js"></script>
     <script src="js/utilites.js"></script>
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+
 </body>
 
 </html>
